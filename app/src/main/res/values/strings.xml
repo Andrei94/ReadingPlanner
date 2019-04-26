@@ -1,3 +1,5 @@
 <resources>
 	<string name="app_name">Reading Planner</string>
+	<string name="book_title">Book Title</string>
+	<string name="total_pages">Total pages</string>
 </resources>
