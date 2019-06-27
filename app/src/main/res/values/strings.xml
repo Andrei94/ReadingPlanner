@@ -2,4 +2,7 @@
 	<string name="app_name">Reading Planner</string>
 	<string name="book_title">Book Title</string>
 	<string name="total_pages">Total pages</string>
+	<string name="some_image">some image</string>
+	<string name="save">Save</string>
+	<string name="cancel">Cancel</string>
 </resources>

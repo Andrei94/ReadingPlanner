@@ -6,9 +6,9 @@
                                                    xmlns:app="http://schemas.android.com/apk/res-auto"
                                                    tools:context=".MainActivity">
 
-	<GridLayout android:layout_width="match_parent"
+	<LinearLayout android:layout_width="match_parent"
 	            android:layout_height="match_parent"
-	            android:columnCount="1">
+	            android:orientation="vertical">
 		<EditText android:id="@+id/book_title"
 		          android:layout_width="match_parent"
 		          android:layout_height="wrap_content"
@@ -22,7 +22,11 @@
 		          android:textSize="@dimen/text_size"
 		          android:inputType="numberDecimal"
 		          android:hint="@string/total_pages"/>
-	</GridLayout>
+		<FrameLayout android:id="@+id/allBooks"
+		             android:layout_width="match_parent"
+		             android:layout_height="wrap_content">
+		</FrameLayout>
+	</LinearLayout>
 
 	<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent"
 	                                                     android:layout_height="match_parent">
@@ -50,15 +54,17 @@
 				          android:layout_marginLeft="20sp"
 				          android:layout_marginEnd="20sp"
 				          android:layout_marginRight="20sp"
-				          android:text="Save"/>
+				          android:text="@string/save"/>
 				<com.google.android.material.floatingactionbutton.FloatingActionButton
+						android:id="@+id/save"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:clickable="true"
 						android:tint="@android:color/white"
 						android:focusable="true"
 						app:fabSize="mini"
-						app:srcCompat="@android:drawable/ic_menu_save"/>
+						app:srcCompat="@android:drawable/ic_menu_save"
+						android:onClick="saveBook"/>
 			</LinearLayout>
 			<LinearLayout android:layout_width="match_parent"
 			              android:layout_height="match_parent"
@@ -70,7 +76,7 @@
 				          android:layout_marginLeft="5sp"
 				          android:layout_marginEnd="10sp"
 				          android:layout_marginRight="10sp"
-				          android:text="Cancel"/>
+				          android:text="@string/cancel"/>
 				<com.google.android.material.floatingactionbutton.FloatingActionButton
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
