@@ -4,11 +4,6 @@
               android:layout_height="wrap_content"
               android:orientation="vertical"
               android:layout_margin="10sp">
-	<ImageView android:id="@+id/text_image"
-	           android:layout_width="wrap_content"
-	           android:layout_height="wrap_content"
-	           android:src="@mipmap/ic_launcher"
-	           android:contentDescription="@string/some_image"/>
 	<TextView android:id="@+id/my_text_view"
 	          android:layout_width="wrap_content"
 	          android:layout_height="wrap_content"
