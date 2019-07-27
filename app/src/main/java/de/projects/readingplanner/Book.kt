@@ -4,7 +4,7 @@ class Book private constructor(private val title: String, private val noPages: I
 	fun isValid(): Boolean = title.isNotEmpty() && noPages > 0
 
 	override fun toString(): String {
-		return "Book(title='$title', noPages=$noPages)"
+		return title
 	}
 
 	companion object {
