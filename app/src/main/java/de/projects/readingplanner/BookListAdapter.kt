@@ -13,7 +13,9 @@ class BookListAdapter(private val myDataset: BookDAO) : RecyclerView.Adapter<Boo
 	}
 
 	override fun onBindViewHolder(holder: BookHolder, position: Int) {
-		holder.textView.text = myDataset.content()[position]
+		val bookTitle = myDataset.content()[position]
+		holder.textView.text = bookTitle
+		holder.book = myDataset.getBook(bookTitle)
 	}
 
 	override fun getItemCount() = myDataset.content().size

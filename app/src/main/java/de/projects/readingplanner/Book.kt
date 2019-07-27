@@ -1,7 +1,13 @@
 package de.projects.readingplanner
 
-class Book private constructor(private val title: String, private val noPages: Int) {
+import java.io.Serializable
+
+class Book private constructor(val title: String, val noPages: Int) : Serializable {
 	fun isValid(): Boolean = title.isNotEmpty() && noPages > 0
+
+	fun getKey(): String {
+		return title
+	}
 
 	override fun toString(): String {
 		return title

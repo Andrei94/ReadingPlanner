@@ -6,6 +6,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class BookHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+	lateinit var book: Book
 	val textView: TextView = itemView.findViewById(R.id.my_text_view)
 
 	init {
@@ -15,7 +16,7 @@ class BookHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 					itemView.context,
 					MainActivity::class.java
 				).apply {
-					putExtra("BOOK_NAME", textView.text)
+					putExtra("book", book)
 				})
 		}
 	}
