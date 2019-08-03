@@ -5,4 +5,6 @@
 	<string name="some_image">some image</string>
 	<string name="save">Save</string>
 	<string name="cancel">Cancel</string>
+	<string name="daily_pages">Daily pages</string>
+	<string name="weekend_pages">Weekend pages</string>
 </resources>
