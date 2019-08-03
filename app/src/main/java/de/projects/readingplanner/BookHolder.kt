@@ -14,7 +14,7 @@ class BookHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 			itemView.context.startActivity(
 				Intent(
 					itemView.context,
-					MainActivity::class.java
+					BookDetailsActivity::class.java
 				).apply {
 					putExtra("book", book)
 				})

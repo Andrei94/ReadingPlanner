@@ -12,10 +12,12 @@
 		<activity android:name=".MainActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
+				<action android:name="android.intent.action.VIEW"/>
 
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
+		<activity android:name=".BookDetailsActivity"/>
 		<!-- You don't need to include android:required="false" if your app's
      minSdkVersion is 28 or higher. -->
 		<uses-library android:name="android.test.runner"

@@ -15,11 +15,6 @@ class MainActivity : AppCompatActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_main)
-		val selectedBook: Book? = intent.getSerializableExtra("book") as Book?
-		selectedBook?.let {
-			book_title.text.append(selectedBook.title)
-			book_pages.text.append(selectedBook.noPages.toString())
-		}
 
 		supportFragmentManager.beginTransaction()
 			.add(R.id.allBooks, bookList)

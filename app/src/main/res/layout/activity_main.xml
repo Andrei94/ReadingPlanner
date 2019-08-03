@@ -7,8 +7,8 @@
                                                    tools:context=".MainActivity">
 
 	<LinearLayout android:layout_width="match_parent"
-	            android:layout_height="match_parent"
-	            android:orientation="vertical">
+	              android:layout_height="match_parent"
+	              android:orientation="vertical">
 		<EditText android:id="@+id/book_title"
 		          android:layout_width="match_parent"
 		          android:layout_height="wrap_content"
@@ -73,9 +73,7 @@
 				<TextView android:layout_width="wrap_content"
 				          android:layout_height="wrap_content"
 				          android:layout_marginStart="5sp"
-				          android:layout_marginLeft="5sp"
 				          android:layout_marginEnd="10sp"
-				          android:layout_marginRight="10sp"
 				          android:text="@string/cancel"/>
 				<com.google.android.material.floatingactionbutton.FloatingActionButton
 						android:layout_width="wrap_content"
