@@ -1,8 +1,9 @@
-package de.projects.readingplanner
+package de.projects.readingplanner.addBook
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import de.projects.readingplanner.R
 
 class BookListAdapter(private val myDataset: BookDAO) : RecyclerView.Adapter<BookHolder>() {
 	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookHolder {

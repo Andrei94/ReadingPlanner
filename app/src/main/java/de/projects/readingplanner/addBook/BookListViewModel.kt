@@ -1,6 +1,8 @@
-package de.projects.readingplanner
+package de.projects.readingplanner.addBook
 
 import androidx.lifecycle.ViewModel
+import de.projects.readingplanner.addBook.Book
+import de.projects.readingplanner.addBook.BookDAO
 
 class BookListViewModel(val books: BookDAO = object : BookDAO {
 	override fun addBook(book: Book): Boolean {

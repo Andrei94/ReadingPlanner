@@ -1,4 +1,4 @@
-package de.projects.readingplanner
+package de.projects.readingplanner.addBook
 
 import java.io.Serializable
 

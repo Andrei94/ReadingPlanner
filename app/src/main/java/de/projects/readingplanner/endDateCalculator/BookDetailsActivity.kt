@@ -1,7 +1,9 @@
-package de.projects.readingplanner
+package de.projects.readingplanner.endDateCalculator
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import de.projects.readingplanner.R
+import de.projects.readingplanner.addBook.Book
 import kotlinx.android.synthetic.main.activity_book_details.*
 
 class BookDetailsActivity : AppCompatActivity() {
@@ -12,7 +14,7 @@ class BookDetailsActivity : AppCompatActivity() {
 		val selectedBook: Book? = intent.getSerializableExtra("book") as Book?
 		selectedBook?.let {
 			book.text = selectedBook.title
-			no_pages.text = selectedBook.noPages.toString() + " pages"
+			no_pages.text = "${selectedBook.noPages} pages"
 		}
 	}
 }

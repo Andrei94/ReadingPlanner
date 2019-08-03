@@ -1,9 +1,11 @@
-package de.projects.readingplanner
+package de.projects.readingplanner.addBook
 
 import android.content.Intent
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import de.projects.readingplanner.R
+import de.projects.readingplanner.endDateCalculator.BookDetailsActivity
 
 class BookHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 	lateinit var book: Book

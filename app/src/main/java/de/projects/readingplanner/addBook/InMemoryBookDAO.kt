@@ -1,12 +1,7 @@
-package de.projects.readingplanner
+package de.projects.readingplanner.addBook
 
-interface BookDAO {
-	fun addBook(book: Book): Boolean
-	fun content(): List<String>
-	fun getBook(title: String): Book
-}
-
-class InMemoryBookDAO(private val books: MutableList<Book> = ArrayList()) : BookDAO {
+class InMemoryBookDAO(private val books: MutableList<Book> = ArrayList()) :
+	BookDAO {
 	override fun getBook(title: String): Book {
 		return books.find { it.getKey() == title }!!
 	}

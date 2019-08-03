@@ -1,4 +1,4 @@
-package de.projects.readingplanner
+package de.projects.readingplanner.addBook
 
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue

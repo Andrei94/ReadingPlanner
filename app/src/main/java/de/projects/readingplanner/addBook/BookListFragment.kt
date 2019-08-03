@@ -1,4 +1,4 @@
-package de.projects.readingplanner
+package de.projects.readingplanner.addBook
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import de.projects.readingplanner.R
 
 class BookListFragment : Fragment() {
 	private lateinit var recyclerView: RecyclerView
@@ -35,6 +36,7 @@ class BookListFragment : Fragment() {
 	}
 
 	companion object {
-		fun newInstance(): BookListFragment = BookListFragment()
+		fun newInstance(): BookListFragment =
+			BookListFragment()
 	}
 }
